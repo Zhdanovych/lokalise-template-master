@@ -814,6 +814,39 @@ u {
   min-height: 170px;
   background-color: #000000;
 }
+.intagration-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.intagration__title {
+  margin-bottom: 0;
+  padding-bottom: 5px;
+  text-align: center;
+  line-height: 1.15;
+}
+.intagration__description {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+.intagration__picture {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.intagration__image {
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 @media (min-width: 576px) {
   .header-content__btn {
     min-width: 160px;
@@ -842,6 +875,10 @@ u {
   .btn--sm {
     min-width: 120px;
     min-height: 45px;
+  }
+  .btn--lg {
+    min-width: 200px;
+    min-height: 60px;
   }
   .header-navbar__btn {
     display: none;
@@ -876,6 +913,13 @@ u {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+  }
+  .intagration {
+    padding-top: 165px;
+    padding-bottom: 160px;
+  }
+  .intagration__description {
+    font-size: 25px;
   }
 }
 @media (min-width: 1200px) {
@@ -927,6 +971,15 @@ u {
   }
   .rating__logo1 {
     padding-left: 70px;
+  }
+  .intagration__title {
+    padding-right: 250px;
+    padding-left: 250px;
+    font-size: 65px;
+  }
+  .intagration__description {
+    padding-right: 380px;
+    padding-left: 380px;
   }
 }
 @media (min-width: 1380px) {
@@ -1007,6 +1060,9 @@ u {
   }
   .feedback__description {
     font-size: 25px;
+  }
+  .intagration__title {
+    font-size: 55px;
   }
 }
 @media (max-width: 991.8px) {
@@ -1133,8 +1189,20 @@ u {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .intagration {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .intagration__description {
+    font-size: 20px;
+  }
 }
 @media (max-width: 991.8px) and (min-width: 576px) {
+  .btn--lg {
+    min-width: 150px;
+    max-height: 35px;
+    font-size: 14px;
+  }
   .header-content__title {
     padding-right: 60px;
     padding-left: 60px;
@@ -1153,6 +1221,9 @@ u {
   .feedback__description {
     text-align: center;
     font-size: 20px;
+  }
+  .intagration__title {
+    font-size: 45px;
   }
 }
 @media (max-width: 991.8px) and (min-width: 768px) {
@@ -1182,6 +1253,11 @@ u {
   }
 }
 @media (max-width: 575.8px) {
+  .btn--lg {
+    min-width: 100px;
+    max-height: 25px;
+    font-size: 14px;
+  }
   .header-content__btn {
     min-width: 120px;
   }
@@ -1203,6 +1279,9 @@ u {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 20px;
+  }
+  .intagration__title {
+    font-size: 35px;
   }
 }
 @media (max-width: 349.8px) {
