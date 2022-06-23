@@ -853,6 +853,35 @@ u {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
+.trial {
+  background-color: #ff9c7d;
+}
+.trial-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+.trial__title {
+  margin: 0;
+  text-align: center;
+  line-height: 1.15;
+}
+.trial__description {
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+  font-size: 20px;
+  line-height: 1.5;
+}
 @media (min-width: 576px) {
   .header-content__btn {
     min-width: 160px;
@@ -867,6 +896,9 @@ u {
 @media (min-width: 768px) {
   .feedback {
     padding-bottom: 105px;
+  }
+  .trial__description {
+    padding-bottom: 25px;
   }
 }
 @media (min-width: 992px) {
@@ -987,6 +1019,16 @@ u {
     padding-right: 380px;
     padding-left: 380px;
   }
+  .trial {
+    padding-top: 120px;
+    padding-bottom: 160px;
+    min-height: 600px;
+  }
+  .trial__title {
+    padding-right: 250px;
+    padding-left: 250px;
+    font-size: 65px;
+  }
 }
 @media (min-width: 1380px) {
   .work__content, .quality__content, .time__content, .control__content {
@@ -1034,6 +1076,10 @@ u {
   .rating__logo1 {
     padding: 0;
   }
+  .trial {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }
 @media (max-width: 1199.8px) and (min-width: 992px) {
   .work__title, .quality__title, .time__title, .control__title {
@@ -1068,6 +1114,9 @@ u {
     font-size: 25px;
   }
   .intagration__title {
+    font-size: 55px;
+  }
+  .trial__title {
     font-size: 55px;
   }
 }
@@ -1206,7 +1255,7 @@ u {
 @media (max-width: 991.8px) and (min-width: 576px) {
   .btn--lg {
     min-width: 150px;
-    max-height: 35px;
+    min-height: 50px;
     font-size: 14px;
   }
   .header-content__title {
@@ -1229,6 +1278,9 @@ u {
     font-size: 20px;
   }
   .intagration__title {
+    font-size: 45px;
+  }
+  .trial__title {
     font-size: 45px;
   }
 }
@@ -1261,7 +1313,7 @@ u {
 @media (max-width: 575.8px) {
   .btn--lg {
     min-width: 100px;
-    max-height: 25px;
+    min-height: 50px;
     font-size: 14px;
   }
   .header-content__btn {
@@ -1287,6 +1339,9 @@ u {
     gap: 20px;
   }
   .intagration__title {
+    font-size: 35px;
+  }
+  .trial__title {
     font-size: 35px;
   }
 }
