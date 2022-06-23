@@ -447,6 +447,12 @@ u {
   background-color: #ff6336;
 }
 
+.btn--black {
+  color: #ffffff;
+  border-color: #000000;
+  background-color: #000000;
+}
+
 .btn--md {
   min-width: 160px;
   min-height: 45px;

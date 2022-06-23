@@ -28,6 +28,12 @@
   border-color: $color-accent;
   background-color: $color-accent;
 }
+.btn--black {
+  color: $color-white;
+  border-color: $color-black;
+  background-color: $color-black;
+
+}
 
 .btn--sm {
   @include lg-min {
