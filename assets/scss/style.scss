@@ -1,4 +1,4 @@
-@use "../../node_modules/normalize.css/normalize";
+@use "../../../node_modules/normalize.css/normalize";
 
 @use "mixins/mixins-media";
 
@@ -23,3 +23,5 @@
 
 @use "sections/main/opportunities/opportunities";
 @use "sections/main/opportunities/opportunity-item";
+
+@use "sections/main/boost/boost";

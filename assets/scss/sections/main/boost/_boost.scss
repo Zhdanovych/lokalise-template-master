@@ -1,7 +1,7 @@
 @use "../../../presets" as *;
 @use "../../../mixins" as *;
 
-.upgrade {
+.boost {
   @include xl-min {
     min-height: 1065px;
     padding-top: 155px;
@@ -24,7 +24,7 @@
     display: grid;
     align-items: baseline;
 
-    gap: $gap-md;
+    gap: $gap-lg;
     @include lg-min {
       grid-template-columns: 1fr 1fr 1fr;
     }
@@ -41,7 +41,7 @@
     max-width: 410px;
 
     @include lg-min {
-      gap: $gap-md;
+      gap: $gap-lg;
     }
     @include lg {
       align-items: center;
@@ -76,7 +76,8 @@
     }
   }
   &__link {
-    color: $color-main;
+    color: $color-black;
+    text-decoration: underline;
 
     font-size: 20px;
     line-height: 30px;

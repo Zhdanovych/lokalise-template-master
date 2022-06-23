@@ -676,6 +676,48 @@ u {
       -ms-flex-order: -1;
           order: -1;
 }
+.boost__header {
+  margin-bottom: 75px;
+  text-align: center;
+}
+.boost__list {
+  display: grid;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  gap: 30px;
+}
+.boost__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 410px;
+}
+.boost__picture {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  margin-bottom: 15px;
+}
+.boost__title {
+  font-weight: 600;
+  line-height: 40px;
+}
+.boost__description {
+  line-height: 1.5;
+}
+.boost__link {
+  color: #000000;
+  text-decoration: underline;
+  font-size: 20px;
+  line-height: 30px;
+}
 @media (min-width: 576px) {
   .header-content__btn {
     min-width: 160px;
@@ -705,6 +747,18 @@ u {
   }
   .opportunities__content {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .boost__list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .boost__item {
+    gap: 30px;
+  }
+  .boost__title {
+    font-size: 30px;
+  }
+  .boost__description {
+    font-size: 20px;
   }
 }
 @media (min-width: 1200px) {
@@ -742,6 +796,11 @@ u {
     padding: 0 40px;
     gap: 110px;
   }
+  .boost {
+    min-height: 1065px;
+    padding-top: 155px;
+    padding-bottom: 190px;
+  }
 }
 @media (min-width: 1380px) {
   .work__content, .quality__content, .time__content, .control__content {
@@ -759,6 +818,10 @@ u {
   }
   .opportunities__content {
     gap: 40px;
+  }
+  .boost {
+    margin-top: 80px;
+    margin-bottom: 80px;
   }
 }
 @media (max-width: 1199.8px) and (min-width: 992px) {
@@ -876,6 +939,22 @@ u {
     padding-top: 80px;
     padding-bottom: 80px;
   }
+  .boost__list {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .boost__item {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+  }
+  .boost__title {
+    font-size: 25px;
+  }
+  .boost__description {
+    text-align: center;
+  }
 }
 @media (max-width: 991.8px) and (min-width: 576px) {
   .header-content__title {
@@ -926,5 +1005,8 @@ u {
   }
   .brands__list {
     justify-items: center;
+  }
+  .boost__header {
+    font-size: 30px;
   }
 }
